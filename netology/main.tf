@@ -74,6 +74,8 @@ resource "yandex_compute_instance" "vm" {
  }
 }
 
+resource "null_resource" "example" {}
+
 # Виртуальная машина
 resource "yandex_compute_instance" "vm_for_each" {
 
