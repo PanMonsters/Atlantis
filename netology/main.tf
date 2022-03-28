@@ -24,7 +24,7 @@ locals {
   }
     vm_count = {
     stage = 1
-    prod = 2
+    prod = 1
   }
     vm_for_each_map = {
     stage = toset(["s1"])
