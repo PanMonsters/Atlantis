@@ -88,7 +88,7 @@ resource "yandex_compute_instance" "vm_for_each" {
 
   resources {
     cores         = local.vm_cores[terraform.workspace]
-    memory        = 4
+    memory        = 2
   }
 
   boot_disk {
