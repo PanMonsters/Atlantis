@@ -46,8 +46,6 @@ locals {
   }
 }
 
-resource "null_resource" "example" {}
-
 # Виртуальная машина
 resource "yandex_compute_instance" "vm" {
   name = "${format("web-%03d", count.index + 1)}"
